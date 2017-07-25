@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript">
+// create angular app
+	var validationApp = angular.module('validationApp', []);
+
+	// create angular controller
+	validationApp.controller('mainController', function($scope) {
+
+		// function to submit the form after all validation has occurred			
+		$scope.submitForm = function() {
+
+			// check to make sure the form is completely valid
+			if ($scope.userForm.$valid) {
+			
+				alert('our form is amazing');
+				
+		$scope.userForm.$setPristine();
+        $scope.userForm.$setUntouched();
+		$scope.user = {};
+		
+				
+			}
+
+		};
+
+	});
+		</script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<div ng-app="validationApp" ng-controller="mainController">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK EXPERIENCE & SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- HOME-->
+<div  class="header-banner" id="home">
+<div class="container">
+  <div class="header-banner-info text-center">
+					<a href="#"><img src="images/logo.png" alt=""></a>
+					<h3>HELLO</h3>
+					<h1>My name is <span>Mangesh,</span> </h1>
+					<br/>
+					<p>I'm a UI developer</p>
+										 
+					
+					
+					
+				</div>
+				</div>
+</div>
+<!-- ABOUT-->
+<div class="about" id="about">
+			<div class="container">
+				<div class="about-section-head text-center">
+					<img src="images/head.png" alt="">
+					<h3>ABOUT</h3>
+					<label></label>
+					<p>Do you want to know me?</p>
+				</div>
+				<div class="about-section-grids">
+					<div class="col-md-12 about-grid-1">
+						<h4>Who am I?</h4>
+						<p>Hello, my name is Mangesh, I completed my post graduation from Neville Wadia college affilated to University of Pune.
+						<p>Having a total experience of 7 years, worked as an user interface developer for more than 4.7 years. Have hands on various technologies such as Angular JS, Javascript, Jquery, Html5, css3, Bootstrap</p>
+						
+						
+					</div>
+					
+					
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="work text-center" id="work">
+		<div class="container">
+		
+		<h3>Work experience & skills</h3>
+		<!-- EXPERIENCE-->
+				<div class="col-md-6 experience-grid">
+				<div class="experience-section">
+				<h4>PROJECTS</h4>
+				<h5>Bank Of Ireland banking application</h5>
+<p><strong>Technologies involved</strong>- Edgeconnect framework</p>
+<p><strong>Team size</strong>- 12</p>
+<p><strong>Description</strong>-</p>
+<p>
+It is an banking application for customer. All the net banking features are available in this application
+</p>
+<p>
+<strong>
+Role- </strong> User stories discussion, UI development
+</p>
+<p>&nbsp;</p>
+<h5>Coolacharya.com</h5>
+<p><strong>Technologies involved</strong>- html5, css, bootstrap, javascript, jquery</p>
+<p><strong>Team size</strong>- 3</p>
+<p><strong>Description-</strong></p>
+<p>
+It is an e-learning portal.
+</p>
+<p>
+<strong>Role-</strong> UI development of website, UI development ofadmin panels and mentoring the portal. maintenance, documentation end to end testing.
+</p>
+
+
+				
+				</div>
+				</div>
+				<!-- SKILLS-->
+		<div class="col-md-6 skill-grid">
+						<h4>MY SKILLS</h4>
+						
+						<div class="progress-grid">
+				  	       <div class="meter red">
+							   <span style="width:80%;">
+							  	<div class="progress_desc">Html5</div>
+								<div class="percent">80%</div> 
+						        <div class="clearfix"> </div>
+						       </span>
+							</div>
+							<div class="meter animate">
+							   <span style="width:80%;"><div class="progress_desc">css3</div>
+								<div class="percent">80%</div> 
+						        <div class="clearfix"> </div>
+							   </span>
+							</div>
+							<div class="meter">
+								<span style="width:70%;"><div class="progress_desc">Jquery</div>
+								 <div class="percent">70%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+							<div class="meter">
+								<span style="width:70%;"><div class="progress_desc">Javascript</div>
+								 <div class="percent">70%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+							
+							<div class="meter">
+								<span style="width:80%;"><div class="progress_desc">Boostrap</div>
+								 <div class="percent">80%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+							<div class="meter">
+								<span style="width:60%;"><div class="progress_desc">Angular Js</div>
+								 <div class="percent">60%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+						</div>
+						
+						
+					  </div>
+					  
+					  </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+		</div>
+<!-- Contact -->
+<div class="contact-section text-center" id="contact">
+		<div class="container">
+			<div class="contact-section-head">
+				<h3>contact</h3>
+				<label></label>
+				
+			</div>
+			<div class="contact-info">
+				<ul>
+					<li><i class="message"></i></li>
+					<li><a href="mailto:mangesh.d@gmail.com">mangesh.d@gmail.com</a></li>
+					<li><i class="phone"></i></li>
+					<li>9765080540</li>
+				</ul>
+				
+				<form class="form-horizontal" name="userForm" ng-submit="submitForm()"  >
+    <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+      <label class="control-label col-sm-2" for="name">Your name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name"  name="name" ng-model="user.name" required />
+      </div>
+    </div>
+	<br/>
+    <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">          
+        <input type="email" name="email" class="form-control" ng-model="user.email" required />
+		<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+      </div>
+    </div>
+	<br/>
+	<div class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+      <label class="control-label col-sm-2" for="message" >Message:</label>
+      <div class="col-sm-10">          
+        <textarea rows="10" class="form-control" ng-model="user.message" required ></textarea>
+      </div>
+    </div>
+    
+	
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" value="SEND MESSAGE"  >
+		
+      </div>
+    </div>
+  </form>
+  
+			</div>
+			<p>&nbsp;</p>
+		</div>
+	</div>
+
+
+<!-- Footer -->
+<div class="footer">
+	    
+			<div class="copy-rights text-center">
+				<p>All rights reserved</p>
+			</div>
+		
+	</div>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+</div>
+</body>
+</html>
